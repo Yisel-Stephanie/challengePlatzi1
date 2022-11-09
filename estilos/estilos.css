@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.seccion1 {
+  background-image: url("/images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #6648b1;
+}
+.img-logo {
+  width: 30%;
+  margin: 1rem 0 0 1rem;
+}
+.img-ilustracion {
+  width: 100%;
+  max-width: 250px;
+  margin: 0.5rem auto;
+}
+
+.hijos {
+  color: white;
+  margin: 0 2rem;
+  text-align: center;
+}
+.hijos h1 {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.hijos p {
+  margin: 1rem 0;
+  font-weight: 100;
+}
+.hijos button {
+  color: #6648b1;
+  border: none;
+  background-color: white;
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 50px;
+  box-shadow: 10px 58px 90px -22px rgba(0, 0, 0, 0.75);
+}
+
+.padre {
+  display: flex;
+  flex-direction: column;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  /* padding: 2rem 0; */
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+i {
+  color: white;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .seccion1 {
+    background-image: url("/images/bg-desktop.svg");
+    background-color: #6648b1;
+    height: 100vh;
+  }
+  .img-ilustracion {
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  .padre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+  }
+  .hijos {
+    text-align: justify;
+  }
+  .hijos h1 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+  .hijos p {
+    margin: 1rem 0;
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+  .redes {
+    display: flex;
+    justify-content: end;
+    margin: -2rem 2rem;
+  }
+  i {
+    font-size: 30px;
+  }
+}
